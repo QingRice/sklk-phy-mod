@@ -7,7 +7,7 @@
 #include <numeric>   // For std::accumulate
 #include <armadillo>
 
-std::pair<std::vector<int>, arma::vec> alloc_rb(std::vector<std::vector<int>>& group_list, const int SEL_UE, const arma::vec& cg_ue_vec, int num_rb, int tti, const arma::cx_mat& H, int ue_index, std::vector<int>& large_ue_list, std::vector<int>& small_ue_list) {
+std::pair<std::vector<int>, arma::vec> alloc_rb(std::vector<std::vector<int>>& group_list, const int SEL_UE, const arma::vec& cg_ue_vec, const arma::cx_mat& H, int ue_index, std::vector<int>& large_ue_list, std::vector<int>& small_ue_list) {
     int len_remain = SEL_UE;
     std::vector<int> sel_UE_list;
 
