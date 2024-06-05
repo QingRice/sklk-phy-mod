@@ -86,7 +86,7 @@ function(sklk_phy_mod_mark_mod_library TARGET)
     set_target_properties(${TARGET} PROPERTIES IS_SKLK_PHY_MOD_LIBRARY YES)
 endfunction()
 
-add_subdirectory(ref_design)
+add_subdirectory(rb_share)
 
 ########################################################################
 # components
